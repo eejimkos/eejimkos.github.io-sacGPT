@@ -4,22 +4,13 @@ var ajaxCall = (key, url, messages) => {
       url: url,
       type: "POST",
       dataType: "json",
-      data: JSON.stringify({
-        model: "text-embedding-ada-002",
-        messages: [
+      data: JSON.stringify(
       {
-        "role": "system",
-        "content": "You are a helpful assistant."
-      },
-      {
-        "role": "user",
-        "content": messages
-      }
-    ],
-        max_tokens: 1024,
-        n: 1,
-        temperature: 0.5,
-      }),
+    "model" : "text-embedding-ada-002",
+    "input" : "lala"
+}  
+      
+      ),
       headers: {
         "Content-Type": "application/json",
         "AI-Resource-Group" : "default",
