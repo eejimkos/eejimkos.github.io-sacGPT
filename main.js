@@ -3,6 +3,9 @@ var ajaxCall = (key, url, prompt) => {
     $.ajax({
       url: url,
       type: "POST",
+      {
+    mode: 'no-cors'
+  },
       dataType: "json",
       data: JSON.stringify(
         {
