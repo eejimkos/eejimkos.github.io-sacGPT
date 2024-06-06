@@ -11,6 +11,8 @@ var ajaxCall = (key, url, messages) => {
         }),
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
+        "Access-Control-Request-Headers" : "x-requested-with",
+        "Access-Control-Allow-Headers" : "*",
         "Access-Control-Allow-Origin":"*",
         "AI-Resource-Group" : "default",
         "Accept": "application/json",
