@@ -52,7 +52,7 @@ const url = "https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/infere
     async post(apiKey, endpoint, messages) {
       const { response } = await ajaxCall(
         apiKey,
-        `${url}/${endpoint}`,
+        `${url}`,
         messages
       );
       console.log(response.choices[0].message.content);
