@@ -10,7 +10,7 @@ var ajaxCall = (key, url, prompt) => {
     "input" : "lala"
 }),
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/x-www-form-urlencoded",
         "AI-Resource-Group": "default",
         "Accept" : "application/json",
         "Access-Control-Allow-Origin":"*",
